@@ -1,4 +1,5 @@
-﻿using gyak6.MnbServiceReference;
+﻿using gyak6.Entities;
+using gyak6.MnbServiceReference;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,10 +14,13 @@ namespace gyak6
 {
     public partial class Form1 : Form
     {
+        public BindingList<RateData> Rates = new BindingList<RateData>();
+        public BindingList<string> Currencies = new BindingList<string>();
         public Form1()
         {
             InitializeComponent();
             GetExchangeRates();
+            dataGridView1.DataSource = Rates;
         }
 
         public void GetExchangeRates()
