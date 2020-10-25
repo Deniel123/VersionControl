@@ -17,6 +17,9 @@ namespace gyak7
         List<Person> Population = new List<Person>();
         List<BirthProbability> BirthProbabilities = new List<BirthProbability>();
         List<DeathProbability> DeathProbabilities = new List<DeathProbability>();
+        int[] Men = new int[3000];
+        int[] Women = new int[3000];
+        Random rng = new Random(1234);
         public Form1()
         {
             InitializeComponent();
