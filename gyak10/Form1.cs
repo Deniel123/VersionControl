@@ -17,6 +17,8 @@ namespace gyak10
         GameArea ga;
         public Form1()
         {
+            //gc.AddPlayer();
+            //gc.Start(true);
             InitializeComponent();
             ga = gc.ActivateDisplay();
             this.Controls.Add(ga);
